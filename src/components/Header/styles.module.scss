@@ -1,0 +1,174 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+
+    &__left_part {
+        padding: 20px 0;
+    }
+
+    &__time_work_block {
+        display: flex;
+    }
+
+    &__work_time {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__saloon_service {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    &__our_saloon {
+        margin-left: 10px;
+    }
+
+    &__our_company {
+        text-decoration: none;
+        border-bottom: 1px solid #004583;
+        color: #004583;
+    }
+
+    &__logo {
+        width: 185px;
+        height: 92px;
+        margin-top: 10px;
+    }
+
+    &__top_block {
+        display: flex;
+    }
+
+    &__clock_icon {
+        margin-top: 5px;
+        margin-right: 5px;
+    }
+
+    &__free_call {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    &__phone_icon {
+        margin-left: 10px;
+        margin-right: 8px;
+        margin-top: 10px;
+    }
+
+    &__call_place {
+        display: flex;
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__right_part {
+        padding: 20px 0;
+    }
+
+    &__bottom_block {
+        margin-top: 12px;
+    }
+
+    &__free_try {
+        color: #BB2822;
+    }
+}
+
+.navbar_elements {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid silver;
+    padding: 10px;
+
+    &__contents {
+        margin-top: 10px;
+    }
+
+    &__btn {
+        border: none;
+        background-color: #fff;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    &__link {
+        margin: 0 20px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    &__clicked {
+        margin-left: 22px;
+    }
+
+    &__search_box {
+        position: relative;
+    }
+
+    &__search_panel {
+        outline: none;
+        width: 330px;
+        height: 35px;
+        border-radius: 47px;
+        border: 1px solid #004583;
+        padding: 0 10px 0;
+    }
+
+    &__search_panel::placeholder {
+        color: #004583;
+    }
+
+    &__search_icon {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        bottom: 10px;
+    }
+}
+
+
+@media (max-width: 1240px) {
+    .header {
+        justify-content: center;
+
+        &__left_part {
+            padding: 20px;
+        }
+
+        &__right_part {
+            padding: 20px;
+        }
+    }
+
+    .navbar_elements {
+        flex-direction: column;
+
+        &__search_box {
+            width: 330px;
+            margin-top: 25px;
+        }
+    }
+}
+
+@media (max-width: 840px) {
+    .header {
+        &__left_part, &__right_part {
+            display: none;
+        }
+
+    }
+
+    .navbar_elements {
+        border: none;
+        &__link {
+            margin: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}

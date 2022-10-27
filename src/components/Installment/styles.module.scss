@@ -1,0 +1,35 @@
+.installment {
+    position: relative;
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+
+    &__body {
+        position: absolute;
+        top: 40px;
+    }
+
+    &__text {
+        font-size: 40px;
+        text-transform: uppercase;
+        color: #fff;
+        font-family: Gilroy, sans-serif;
+        width: 229px;
+        font-weight: normal;
+        margin-bottom: 10rem;
+    }
+
+    &__bold {
+        font-weight: bold;
+        font-size: 60px;
+    }
+
+    &__detailly {
+        width: 194px;
+        height: 40px;
+        color: #004583;
+        background-color: #fff;
+        cursor: pointer;
+        border: none;
+    }
+}

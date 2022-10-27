@@ -1,0 +1,16 @@
+.main_page {
+    display: flex;
+    padding: 2rem 9rem;
+
+    &__left_window {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1140px) {
+    .main_page {
+        padding: 0;
+        margin-top: 40px;
+    }
+}
